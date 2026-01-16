@@ -6,7 +6,7 @@ import { PredictionHistoryService } from './prediction-history.service';
 
 dotenv.config();
 
-interface ModelApiResponse {
+export interface ModelApiResponse {
   prediction?: {
     label?: string;
     is_fake?: boolean;

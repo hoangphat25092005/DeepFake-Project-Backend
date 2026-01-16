@@ -3,6 +3,7 @@ import { FileInterceptor } from '@nestjs/platform-express';
 import { memoryStorage } from 'multer';
 import { DetectionService } from './detection.service';
 import { PredictionHistoryService } from './prediction-history.service';
+import { ModelApiResponse } from './detection.service';
 
 const MAX_UPLOAD_BYTES = 50 * 1024 * 1024; // 50MB
 const ALLOWED_MIME_TYPES = new Set([
