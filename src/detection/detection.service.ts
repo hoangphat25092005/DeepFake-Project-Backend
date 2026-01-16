@@ -67,14 +67,14 @@ export class DetectionService {
 
       return {
         success: true,
-        predictionId: savedRecord.id,
+        predictionId: savedRecord['id'],
         label,
         isFake,
         confidence,
         scores: data?.prediction?.scores,
         imageInfo: data?.image_info,
         resultImageUrl: data?.result_image_url,
-        createdAt: savedRecord.created_at,
+        createdAt: savedRecord['created_at'],
         raw: data,
       };
     } catch (error) {
